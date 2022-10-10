@@ -1,7 +1,14 @@
 import * as React from "react";
+import Hero from "../components/hero";
+import Presentation from "../components/presentation";
 
 const IndexPage = () => {
-  return <main></main>;
+  return (
+    <main>
+      <Hero />
+      <Presentation />
+    </main>
+  );
 };
 
 export default IndexPage;

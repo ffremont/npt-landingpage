@@ -1,0 +1,10 @@
+[
+    {
+        "salle" : "Salle 3e étage",
+        "slot" : "12h45 - 13h30",
+        "logo": "financement",
+        "type": "Financement",
+        "description" : "Salarié·e, je recherche des financements pour ma formation",
+        "intervenant": "Opco Atlas"
+    }
+]

@@ -1,3 +1,17 @@
+@import "bulma/sass/utilities/initial-variables";
+
+$darkblue: #251D5C;
+$darkblue-invert: findColorInvert($darkblue);
+$custom-colors: ("darkblue": ($darkblue, $darkblue-invert));
+
+
+$hero-body-padding: 0;
+$hero-body-padding-tablet: 0;
+$hero-body-padding-small: 0;
+$hero-body-padding-medium: 0;
+$hero-body-padding-large: 0;
+
+
 $icomoon-font-family: "eni" !default;
 $icomoon-font-path: "fonts" !default;
 
