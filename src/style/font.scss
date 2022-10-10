@@ -3,7 +3,7 @@
 @font-face {
   font-family: "#{$icomoon-font-family}";
   src: url("/#{$icomoon-font-path}/#{$icomoon-font-family}.eot?j1o180");
-  src: url(/"#{$icomoon-font-path}/#{$icomoon-font-family}.eot?j1o180#iefix")
+  src: url("/#{$icomoon-font-path}/#{$icomoon-font-family}.eot?j1o180#iefix")
       format("embedded-opentype"),
     url("/#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?j1o180")
       format("truetype"),

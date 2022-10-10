@@ -1,13 +1,12 @@
 import { graphql, useStaticQuery } from "gatsby";
 import * as React from "react";
-import styles from './programme.module.scss';
 
-const ProgrammeBlock = ({ logo, text }) => (
+const ProgrammeBlock = ({  logo, description }) => (
   <div className="box is-flex is-flex-direction-column ">
     <div>
       <span className={`icon-${logo}`}></span>
     </div>
-    <div>{text}</div>
+    <div>{description}</div>
   </div>
 );
 
@@ -30,7 +29,7 @@ const Programme = () => {
 
   return (
     
-    <section className={`${styles.programme} is-darkblue`}>
+    <section className={`programme is-darkblue`}>
       <div className="wrapper columns is-multiline">
         <div className="column is-12">
           <h2>Au programme</h2>
@@ -44,15 +43,15 @@ const Programme = () => {
               <span>11h - 12h30</span>
             </h4>
             <div className="et_pb_blurb_description">
-              <p style="text-align: center;">Table Ronde de lancement</p>
-              <p style="text-align: center;">
+              <p >Table Ronde de lancement</p>
+              <p >
                 <strong>
                   Le numérique, une chance pour les femmes.
                   <br />
                   Les femmes, une chance pour le numérique
                 </strong>
               </p>
-              <p style="text-align: center;">
+              <p >
                 Axelle LEROUX, Carolle GOLLA, Sandra GERARD, Francine ROUX,
                 Julia MEMETEAU
               </p>
@@ -63,7 +62,7 @@ const Programme = () => {
 
       <div className="columns is-multiline">
         {allProgrammesJson?.nodes.map((programme) => (
-          <div key={id} className="column is-3-desktop is-6-mobile">
+          <div key={programme.id} className="column is-3-desktop is-6-mobile">
             <ProgrammeBlock {...programme} />
           </div>
         ))}

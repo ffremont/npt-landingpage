@@ -4,6 +4,11 @@ $darkblue: #251D5C;
 $darkblue-invert: findColorInvert($darkblue);
 $custom-colors: ("darkblue": ($darkblue, $darkblue-invert));
 
+$lightgreen :#00dec2;
+$lightgreen-invert: findColorInvert($lightgreen);
+$custom-colors: ("lightgreen": ($lightgreen, $lightgreen-invert));
+
+$white: #FFF;
 
 $hero-body-padding: 0;
 $hero-body-padding-tablet: 0;

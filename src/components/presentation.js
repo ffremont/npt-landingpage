@@ -1,12 +1,12 @@
 import { graphql, useStaticQuery } from "gatsby";
 import * as React from "react";
 
-const PresentationBlock = ({logo, text}) => (
-  <div className="is-flex is-flex-direction-column ">
-    <div>
-      <span className={`icon-${logo}`}></span>
+const PresentationBlock = ({ logo, text }) => (
+  <div className="is-flex is-flex-direction-column flex-wrap">
+    <div className="has-text-centered my-2">
+      <strong><span className={`icon-${logo}`}></span></strong>
     </div>
-    <div>{text}</div>
+    <div className="has-text-centered"><strong>{text}</strong></div>
   </div>
 );
 
@@ -24,14 +24,18 @@ const Presentation = () => {
   `);
 
   return (
-    <div>
-      <h2>Numérique Pour Toutes, c'est quoi ?</h2>
-      <div className="columns is-multiline">
-        {allPresentationsJson?.nodes.map(({ id, logo, text }) => (
-          <div key={id} className="column is-3-desktop is-6-mobile">
-            <PresentationBlock logo={logo} text={text} />
-          </div>
-        ))}
+    <div className="presentation-component">
+      <h2 className="has-text-centered my-5">
+        Numérique Pour Toutes, c'est quoi ?
+      </h2>
+      <div className="container is-max-desktop">
+        <div className="columns is-multiline">
+          {allPresentationsJson?.nodes.map(({ id, logo, text }) => (
+            <div key={id} className="column is-3-desktop is-12-mobile">
+              <PresentationBlock logo={logo} text={text} />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
