@@ -1,7 +1,38 @@
-.programme {
-  .wrapper {
-    width: 80%;
-    max-width: 1080px;
-    margin: auto;
+.programme-component {
+  margin-top: 80px;
+  background-color: $darkblue;
+
+  .box {
+    p, strong, span, h1, h2, h3, h4 {
+      font-family: "Open Sans", sans-serif;
+      color: $darkblue;
+    }
+    
+    padding: 10px;
+
+    &.program-accueil {
+      font-weight: 500;
+      
+      font-size: 22px;
+    }
+
+    &.is-box-lightgreen {
+      background-color: $lightgreen;
+      padding: 5px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    &.table-ronde {
+      h4 {
+        font-size: 18px;
+        font-weight: 500;
+        color:$lightgreen;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
   }
 }

@@ -4,6 +4,7 @@
 @import "./font";
 @import "../components/presentation.style.scss";
 @import "../components/niort-tech.style.scss";
+@import "../components/programme.style.scss";
 
 h1,
 h2,
@@ -15,10 +16,14 @@ h6 {
 }
 
 h2 {
-    font-size: 32px;
-    color: $lightgreen ;
+  font-size: 32px;
+  color: $lightgreen;
 }
 
 h3 {
-    font-size: 22px;
+  font-size: 22px;
+}
+
+.is-lightgreen {
+  color: $lightgreen !important;
 }
