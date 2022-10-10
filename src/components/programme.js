@@ -2,19 +2,19 @@ import { graphql, useStaticQuery } from "gatsby";
 import * as React from "react";
 import { v4 as uuidv4 } from "uuid";
 
-const ProgrammeBlock = ({
-  salle,
-  slot,
-  type,
-  logo,
-  intervenants,
-  description,
-}) => (
-  <div className="box is-flex is-flex-direction-column ">
-    <div>
-      <span className={`icon-${logo}`}></span>
+const ProgrammeBlock = ({ programme }) => (
+  <div className="program-block full-width box is-relative is-flex is-flex-direction-column has-text-centered">
+    <div className="has-text-left logo-wrapper">
+      <span className={`icon-${programme.logo}`}></span>
     </div>
-    <div>{description}</div>
+    <h4>{programme.slot}</h4>
+    <p className="block">{programme.type}</p>
+    <p className="block">
+      <strong>{programme.description}</strong>
+    </p>
+    {programme.intervenants.map((intervenant) => (
+      <p className="block">{intervenant}</p>
+    ))}
   </div>
 );
 
@@ -33,6 +33,7 @@ const Programme = () => {
             intervenants
             description
           }
+          totalCount
         }
       }
     }
@@ -40,6 +41,30 @@ const Programme = () => {
   allProgrammesJson.group.sort(function (a, b) {
     return b.nodes.length - a.nodes.length;
   });
+
+  const labels = allProgrammesJson.group.map((group) => group.salle);
+  const arraySize = allProgrammesJson.group.reduce(
+    (previousValue, currentValue) =>
+      previousValue < currentValue.totalCount
+        ? currentValue.totalCount
+        : previousValue,
+    0
+  );
+
+  let sortedArray = [];
+  allProgrammesJson.group.forEach(({ nodes }, i) => {
+    for (let j = 0; j < arraySize; j++) {
+      if (!sortedArray[j]) {
+        sortedArray[j] = [];
+      }
+      if (j >= nodes.length) {
+        sortedArray[j].push(null);
+      } else {
+        sortedArray[j].push(nodes[j]);
+      }
+    }
+  });
+  console.warn(sortedArray);
 
   return (
     <section className="programme-component">
@@ -78,20 +103,38 @@ const Programme = () => {
           </div>
         </div>
 
-        <div className="columns is-multiline">
-          {allProgrammesJson?.group.map((programmeGrp) => (
+        <div className="columns is-multiline is-hidden-mobile">
+          {labels.map((label) => (
             <div
-              key={uuidv4(JSON.stringify(programmeGrp.salle), uuidv4.URL)}
+              key={uuidv4(JSON.stringify(label), uuidv4.URL)}
               className="column is-3-desktop is-12-mobile"
             >
               <div className="box has-text-centered is-box-lightgreen">
-                {programmeGrp.salle}
+                {label}
               </div>
-              {programmeGrp.nodes.map((programme) => (
-                <ProgrammeBlock {...programme} />
-              ))}
             </div>
           ))}
+          {sortedArray.map((programmeGrp, i) => {
+            return (
+              <>
+                <div
+                  className="column is-12-mobile is-hidden-tablet"
+                >
+                  <div className="box has-text-centered is-box-lightgreen">
+                    {labels[i]}
+                  </div>
+                </div>
+                {programmeGrp.map((programme) => (
+                  <div
+                    key={uuidv4(JSON.stringify(programme), uuidv4.URL)}
+                    className="column is-flex is-3-desktop is-12-mobile"
+                  >
+                    {programme && <ProgrammeBlock programme={programme} />}
+                  </div>
+                ))}
+              </>
+            );
+          })}
         </div>
       </div>
     </section>

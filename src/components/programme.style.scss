@@ -2,6 +2,12 @@
   margin-top: 80px;
   background-color: $darkblue;
 
+  h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color:$lightgreen !important;
+  }
+
   .box {
     p, strong, span, h1, h2, h3, h4 {
       font-family: "Open Sans", sans-serif;
@@ -24,15 +30,23 @@
     }
 
     &.table-ronde {
-      h4 {
-        font-size: 18px;
-        font-weight: 500;
-        color:$lightgreen;
-      }
+
 
       p {
         font-size: 14px;
       }
     }
+  }
+
+  .program-block {
+    .logo-wrapper {
+      font-size: 26px;
+    }
+
+    p{
+      line-height: 1.4em;
+      font-size: 14px;
+    }
+    
   }
 }
