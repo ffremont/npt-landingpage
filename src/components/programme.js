@@ -1,7 +1,15 @@
 import { graphql, useStaticQuery } from "gatsby";
 import * as React from "react";
+import { v4 as uuidv4 } from "uuid";
 
-const ProgrammeBlock = ({ logo, description }) => (
+const ProgrammeBlock = ({
+  salle,
+  slot,
+  type,
+  logo,
+  intervenants,
+  description,
+}) => (
   <div className="box is-flex is-flex-direction-column ">
     <div>
       <span className={`icon-${logo}`}></span>
@@ -14,18 +22,24 @@ const Programme = () => {
   const { allProgrammesJson } = useStaticQuery(graphql`
     query programmeQuery {
       allProgrammesJson {
-        nodes {
-          id
-          salle
-          slot
-          logo
-          type
-          description
-          intervenants
+        group(field: salle) {
+          salle: fieldValue
+          nodes {
+            id
+            salle
+            slot
+            type
+            logo
+            intervenants
+            description
+          }
         }
       }
     }
   `);
+  allProgrammesJson.group.sort(function (a, b) {
+    return b.nodes.length - a.nodes.length;
+  });
 
   return (
     <section className="programme-component">
@@ -65,9 +79,17 @@ const Programme = () => {
         </div>
 
         <div className="columns is-multiline">
-          {allProgrammesJson?.nodes.map((programme) => (
-            <div key={programme.id} className="column is-3-desktop is-6-mobile">
-              <ProgrammeBlock {...programme} />
+          {allProgrammesJson?.group.map((programmeGrp) => (
+            <div
+              key={uuidv4(JSON.stringify(programmeGrp.salle), uuidv4.URL)}
+              className="column is-3-desktop is-12-mobile"
+            >
+              <div className="box has-text-centered is-box-lightgreen">
+                {programmeGrp.salle}
+              </div>
+              {programmeGrp.nodes.map((programme) => (
+                <ProgrammeBlock {...programme} />
+              ))}
             </div>
           ))}
         </div>
