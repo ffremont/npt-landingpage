@@ -1,0 +1,29 @@
+[
+    {
+        "nom": "Mission Locale",
+        "photo": "partenaires/missionlocale.jpg"
+    },
+    {
+        "nom": "CCI DEUX-SEVRES",
+        "photo": "partenaires/ccideuxsevres.jpg"
+    },
+    {
+        "nom": "Pôle emploi",
+        "photo": "partenaires/polemploi.jpg"
+    },
+    {
+        "nom": "Aract",
+        "photo": "partenaires/aract.jpg"
+    },    {
+        "nom": "Re travailler",
+        "photo": "partenaires/retravailler.jpg"
+    }
+    ,    {
+        "nom": "Atlas Opco",
+        "photo": "partenaires/atlasopco.jpg"
+    }
+    ,{
+        "nom": "Cap emploi",
+        "photo": "partenaires/capemploi.jpg"
+    }
+]
