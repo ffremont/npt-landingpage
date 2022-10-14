@@ -24,7 +24,7 @@ const Presentation = () => {
   `);
 
   return (
-    <div className="presentation-component">
+    <div className="presentation-component px-5">
       <h2 className="has-text-centered my-5">
         Numérique Pour Toutes, c'est quoi ?
       </h2>

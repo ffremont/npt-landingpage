@@ -39,7 +39,7 @@ const NiortTech = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="container is-max-desktop">
+        <div className="container is-max-widescreen">
           <div className="columns">
             <div className="column is-6-tablet is-12-mobile">
               <GatsbyImage
@@ -57,7 +57,7 @@ const NiortTech = () => {
                     image={getImage(
                       numeriquePourToutes.childImageSharp.gatsbyImageData
                     )}
-                    alt="niort tech"
+                    alt="numérique pour toutes"
                   />
                   <h2 className="is-uppercase my-5 has-text-centered-mobile">
                     niort tech

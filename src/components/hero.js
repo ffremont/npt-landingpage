@@ -1,9 +1,7 @@
 import * as React from "react";
 import { graphql, Link, useStaticQuery } from "gatsby";
-import { GatsbyImage, getImage, withArtDirection } from "gatsby-plugin-image";
-import { convertToBgImage } from "gbimage-bridge";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { BgImage } from "gbimage-bridge";
-import BackgroundImage from "gatsby-background-image";
 
 const Hero = () => {
   const {
@@ -43,23 +41,14 @@ const Hero = () => {
     }
   `);
 
-  const images = withArtDirection(
-    getImage(bandeauFile.childImageSharp.gatsbyImageData),
-    [
-      {
-        media: `(max-width: 768px)`,
-        image: getImage(femmeFile.childImageSharp.gatsbyImageData),
-      },
-    ]
-  );
-
   return (
     <section className="hero-component hero is-darkblue is-medium is-link">
       <div className="hero-body">
         <div className="columns is-gapless">
-          <div className="column is-relative is-12">
+          <div className="column is-12">
             <BgImage
-              image={getImage(bandeauFile.childImageSharp.gatsbyImageData)}
+              className="is-hidden-mobile"
+              image={bandeauFile.childImageSharp.gatsbyImageData}
               Tag="div"
             >
               <div className="columns is-gapless py-6">
@@ -107,13 +96,49 @@ const Hero = () => {
                 </div>
               </div>
             </BgImage>
-          </div>
-          <div className="column is-mobile is-hidden-tablet">
-            {/* <div>
-              <GatsbyImage
-                image={logoNumeriquePourToutes}
-                alt="Logo Numérique pour toutes"
-              /> */}
+            <div className="columns is-hidden-tablet">
+              <div className="column is-12 p-0">
+                <BgImage
+                  image={femmeFile.childImageSharp.gatsbyImageData}
+                  Tag="div"
+                  style={{ minHeight: "400px" }}
+                />
+              </div>
+
+              <div className="p-5 is-flex is-align-items-center has-bg-darkblue has-text-centered is-flex-direction-column column is-12-mobile is-darkblue">
+                <GatsbyImage
+                  style={{ width: "65%"}}
+                  className="block has-text-centered"
+                  image={getImage(
+                    logoNumeriquePourToutes.childImageSharp.gatsbyImageData
+                  )}
+                  alt="numérique pour toutes"
+                />
+
+                <GatsbyImage
+                  className="block mt-3"
+                  style={{ width: "80%"}}
+                  image={getImage(
+                    reconversionFeminin.childImageSharp.gatsbyImageData
+                  )}
+                  alt="La reconversion au féminin"
+                />
+
+                <h1 className="block mt-5">
+                  09/11/2021 <br/> NIORT TECH <br/> 10H30 – 20H
+                </h1>
+
+                <p>
+                  <a
+                    className="eni-button is-inline-block my-3 is-uppercase"
+                    href="https://niort-agglo.cosoft.fr/LogOn?ReturnUrl=/Admin/ResourceEvent/ReservationListResourceEvent/23d9a821-dd32-4b58-bdcd-ad8f00c3e7c0"
+                    target="_blank"
+                  >
+                    inscrivez-vous dès maintenant !
+                  </a>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
