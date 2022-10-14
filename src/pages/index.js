@@ -1,4 +1,5 @@
 import * as React from "react";
+import Contacts from "../components/Contacts";
 import Hero from "../components/hero";
 import NiortTech from "../components/niort-tech";
 import Organisateurs from "../components/organisateurs";
@@ -15,6 +16,7 @@ const IndexPage = () => {
       <Programme />
       <Speakers />
       <Organisateurs />
+      <Contacts />
     </main>
   );
 };

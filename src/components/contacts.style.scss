@@ -1,0 +1,14 @@
+.contacts-component {
+  p,
+  a,
+  span {
+    font-family: "Open Sans", sans-serif;
+    color: $darkblue;
+    font-size: 14px;
+  }
+
+  .container {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}

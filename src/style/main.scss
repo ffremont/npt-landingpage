@@ -8,7 +8,7 @@
 @import "../components/programme.style.scss";
 @import "../components/speakers/speakers.style.scss";
 @import "../components/organisateurs.style.scss";
-
+@import "../components/contacts.style.scss";
 
 body{
   overflow: hidden;
@@ -63,4 +63,8 @@ h3 {
 
 .has-bg-darkblue {
   background-color: $darkblue !important;
+}
+
+.has-bg-lightgreen {
+  background-color: $lightgreen !important;
 }
