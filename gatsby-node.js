@@ -5,7 +5,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       photo: File @link(by: "relativePath")
     }
 
-    type partenairesJson implements Node {
+    type PartenairesJson implements Node {
         photo: File @link(by: "relativePath")
       }
     `

@@ -67,7 +67,7 @@ const Programme = () => {
   console.warn(sortedArray);
 
   return (
-    <section className="programme-component">
+    <section id="programme" className="programme-component">
       <div className="container is-max-desktop pt-6">
         <div className="columns is-multiline">
           <div className="column is-12 has-text-centered">
