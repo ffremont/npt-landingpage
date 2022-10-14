@@ -8,6 +8,11 @@
 @import "../components/programme.style.scss";
 @import "../components/speakers/speakers.style.scss";
 
+
+body{
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -53,4 +58,8 @@ h3 {
   &:hover {
     color: $white !important;
   }
+}
+
+.has-bg-darkblue {
+  background-color: $darkblue !important;
 }

@@ -64,11 +64,11 @@ const Programme = () => {
       }
     }
   });
-  console.warn(sortedArray);
 
   return (
-    <section id="programme" className="programme-component">
-      <div className="container is-max-desktop pt-6">
+    <section id="programme" className="programme-component px-5">
+      <div className="container is-max-widescreen pt-6">
+   
         <div className="columns is-multiline">
           <div className="column is-12 has-text-centered">
             <h2>Au programme</h2>
@@ -103,11 +103,11 @@ const Programme = () => {
           </div>
         </div>
 
-        <div className="columns is-multiline is-hidden-mobile">
+        <div className="columns is-multiline">
           {labels.map((label) => (
             <div
               key={uuidv4(JSON.stringify(label), uuidv4.URL)}
-              className="column is-3-desktop is-12-mobile"
+              className="column is-3-desktop is-12-mobile is-hidden-mobile"
             >
               <div className="box has-text-centered is-box-lightgreen">
                 {label}

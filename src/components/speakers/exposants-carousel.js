@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { Carousel } from "react-responsive-carousel";
 
-const Slide = ({ intervenant }) => console.warn(intervenant) || (
+const Slide = ({ intervenant }) => (
   <div className="box is-flex is-flex-direction-column">
     <GatsbyImage
       style={{ maxHeight: 355 }}
