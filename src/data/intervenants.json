@@ -1,0 +1,17 @@
+[
+    {
+        "nom": "NomIntervenante1",
+        "prenom": "PrenomIntervenante1",
+        "photo": "intervenants/imageIntervenante.jpg"
+    },
+    {
+        "nom": "NomIntervenante2",
+        "prenom": "PrenomIntervenante2",
+        "photo": "intervenants/imageIntervenante2.jpg"
+    },
+    {
+        "nom": "NomIntervenante3",
+        "prenom": "PrenomIntervenante3",
+        "photo": "intervenants/imageIntervenante3.jpg"
+    }
+]
