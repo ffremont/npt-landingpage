@@ -14,25 +14,4 @@
     font-weight: 500;
     font-family: 'Open Sans', sans-serif ;
   }
-
-  .eni-button {
-    color: $darkblue;
-    border-width: 0px;
-    font-weight: 600 !important;
-    background-color: $lightgreen;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    padding-left: 16px;
-    padding-right: 16px;
-    font-family: 'Open Sans', sans-serif ;
-    font-weight: 500;
-    font-size:13px;
-    line-height: 22.1px;
-    text-decoration-color: $darkblue;
-    border-radius: 3px;
-    -webkit-font-smoothing: antialiased;
-    &:hover {
-      color:$white;
-    }
-  }
 }
