@@ -64,7 +64,6 @@ const Programme = () => {
       }
     }
   });
-  console.warn(sortedArray);
 
   return (
     <section id="programme" className="programme-component px-5">
