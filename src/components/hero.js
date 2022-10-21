@@ -11,14 +11,14 @@ const Hero = () => {
     reconversionFeminin,
   } = useStaticQuery(graphql`
     query brandQuery {
-      femmeFile: file(base: { eq: "femme.jpeg" }) {
+      femmeFile: file(base: { eq: "femme.png" }) {
         childImageSharp {
           gatsbyImageData(breakpoints: [750, 1080, 1366, 1920])
         }
       }
 
       bandeauFile: file(
-        base: { eq: "bandeau-site-numerique-pour-toutes.jpeg" }
+        base: { eq: "bandeau.jpg" }
       ) {
         childImageSharp {
           gatsbyImageData(breakpoints: [750, 1080, 1366, 1920])
@@ -73,7 +73,9 @@ const Hero = () => {
                   />
 
                   <h1 className="block mt-5">
-                    09/11/2021 | NIORT TECH | 10H30 – 20H
+                  22/11/2022 | NIORT TECH<br/>
+                JOURNÉE DE 10H À 17H30 | GRATUIT<br/>
+                AFTERWORK À PARTIR DE 19H I PAYANT SUR INSCRIPTION
                   </h1>
                   <p>
                     <Link
@@ -125,7 +127,9 @@ const Hero = () => {
                 />
 
                 <h1 className="block mt-5">
-                  09/11/2021 <br/> NIORT TECH <br/> 10H30 – 20H
+                22/11/2022 | NIORT TECH<br/>
+                JOURNÉE DE 10H À 17H30 | GRATUIT<br/>
+                AFTERWORK À PARTIR DE 19H I PAYANT SUR INSCRIPTION
                 </h1>
 
                 <p>

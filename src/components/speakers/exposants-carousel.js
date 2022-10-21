@@ -2,28 +2,28 @@ import * as React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { Carousel } from "react-responsive-carousel";
+import { chunk } from 'lodash';
 
-const Slide = ({ intervenant }) => (
+const Slide = ({ partenaire }) => (
   <div className="box is-flex is-flex-direction-column">
     <GatsbyImage
-      style={{ maxHeight: 355 }}
-      image={getImage(intervenant.photo.childImageSharp.gatsbyImageData)}
+      image={getImage(partenaire.photo.childImageSharp.gatsbyImageData)}
       alt="femme numérique"
     />
-    <div>
-      {intervenant.nom} {intervenant.prenom}
-    </div>
+    <div>{partenaire.nom}</div>
   </div>
 );
 
 const ExposantsCarousel = () => {
-  const { allIntervenantsJson } = useStaticQuery(graphql`
-    query intervenantsQuery {
-      allIntervenantsJson {
+ 
+  const { allPartenairesJson } = useStaticQuery(graphql`
+    query partenairesQuery {
+      allPartenairesJson {
         nodes {
           id
           nom
-          prenom
+          lien
+          exposant
           photo {
             childImageSharp {
               gatsbyImageData
@@ -33,6 +33,7 @@ const ExposantsCarousel = () => {
       }
     }
   `);
+  const exposants = chunk(allPartenairesJson.nodes.filter(p => p.exposant),4);
 
   return (
     <section className="speaker-component">
@@ -43,8 +44,14 @@ const ExposantsCarousel = () => {
           </div>
           <div className="column is-12 has-text-centered">
             <Carousel emulateTouch autoPlay infiniteLoop showArrows={false} showStatus={false} >
-              {allIntervenantsJson.nodes.map((intervenant) => (
-                <Slide intervenant={intervenant} />
+            {exposants.map((chunk) => (
+                <div className="columns is-multiline">
+                  {chunk.map((partenaire) => (
+                    <a href={partenaire.lien} className="column is-3 has-text-centered">
+                      <Slide partenaire={partenaire} />
+                    </a>
+                  ))}
+                </div>
               ))}
             </Carousel>
           </div>

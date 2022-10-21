@@ -42,6 +42,7 @@ const IntervenantCarousel = () => {
             <h2>Les intervenants</h2>
           </div>
           <div className="column is-12 has-text-centered">
+            
             <Carousel emulateTouch autoPlay infiniteLoop showArrows={false} showStatus={false} >
               {allIntervenantsJson.nodes.map((intervenant) => (
                 <Slide intervenant={intervenant} />

@@ -13,13 +13,13 @@ const Contacts = () => {
               <br /> Margot BUGNOT
               <br />
               <a href="mailto:mbugnot@eni-ecole.fr">mbugnot@eni-ecole.fr</a>
-              <br /> 05 35 37 11 87
+              <br /> 05.35.37.11.87
             </p>
             <p className="block">
               Virginie NEVEU
               <br />
               <a href="mailto:vneveu@eni-ecole.fr">vneveu@eni-ecole.fr</a>
-              <br /> 05 35 37 11 83
+              <br /> 05.35.37.11.85
             </p>
           </div>
           <div className="column is-4 has-text-centered">
@@ -27,12 +27,12 @@ const Contacts = () => {
               <span className="has-text-weight-bold is-block">
                 CBE/Ambassadrices du numérique
               </span>
-              <br /> Laure TUFFEREAU
+              <br /> Julie LAGAS
               <br />
-              <a href="mailto:laure.tuffereau@cbeduniortais.fr">
-                laure.tuffereau@cbeduniortais.fr
+              <a href="mailto:julie.lagas@cbeduniortais.fr">
+              julie.lagas@cbeduniortais.fr
               </a>
-              <br /> 06 24 24 05 54
+              <br /> 06 14 70 31 14
             </p>
           </div>
           <div className="column is-4 has-text-centered">

@@ -21,6 +21,8 @@ const PartenairesCarousel = () => {
         nodes {
           id
           nom
+          lien
+          exposant
           photo {
             childImageSharp {
               gatsbyImageData
@@ -51,9 +53,9 @@ const PartenairesCarousel = () => {
               {partenaires.map((chunk) => (
                 <div className="columns is-multiline">
                   {chunk.map((partenaire) => (
-                    <div className="column is-3 has-text-centered">
+                    <a href={partenaire.lien} className="column is-3 has-text-centered">
                       <Slide partenaire={partenaire} />
-                    </div>
+                    </a>
                   ))}
                 </div>
               ))}

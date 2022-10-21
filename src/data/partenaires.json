@@ -1,29 +1,106 @@
 [
     {
+        "nom": "Ambassadrices du numérique",
+        "lien": "https://cben-hvs.fr/accueil/les-ambassadrices-du-numerique-2021/",
+        "exposant": true,
+        "photo": "partenaires/cbe.png"
+    },{
+        "nom": "NiortWeb",
+        "lien": "https://niortweb.fr",
+        "exposant": true,
+        "photo": "partenaires/nw.png"
+    },{
+        "nom": "Entreprendre au féminin",
+        "lien": "https://www.eaf-deux-sevres.fr/accueil.html",
+        "exposant": true,
+        "photo": "partenaires/entreprendre.png"
+    },{
         "nom": "Mission Locale",
+        "lien": "http://www.mls79.fr/",
+        "exposant": true,
         "photo": "partenaires/missionlocale.jpeg"
-    },
-    {
-        "nom": "CCI DEUX-SEVRES",
-        "photo": "partenaires/ccideuxsevres.png"
-    },
-    {
+    }, {
         "nom": "Pôle emploi",
+        "lien": "https://www.pole-emploi.fr/accueil/",
+        "exposant": true,
         "photo": "partenaires/poleemploi.jpeg"
+    },{
+        "nom": "Cap Emploi",
+        "lien": "https://www.capemploi-79.com/",
+        "exposant": true,
+        "photo": "partenaires/capemploi-79.png"
+    },{
+        "nom": "SNC",
+        "lien": "https://snc.asso.fr/snc-niort",
+        "exposant": true,
+        "photo": "partenaires/snc.png"
+    },{
+        "nom": "ENI",
+        "lien": "https://www.eni-ecole.fr/",
+        "exposant": true,
+        "photo": "partenaires/eni.png"
     },
+
+    {
+        "nom": "Fabrique du numérique",
+        "lien": "https://www.fabdunum.fr/",
+        "exposant": true,
+        "photo": "partenaires/fabrique.jpeg"
+    },
+    {
+        "nom": "Ma réussite",
+        "lien": "https://www.mareussite.com/",
+        "exposant": true,
+        "photo": "partenaires/mareussite.png"
+    },
+    {
+        "nom": "Jume",
+        "lien": "https://www.jume.co/",
+        "exposant": true,
+        "photo": "partenaires/jume.png"
+    },
+
+    {
+        "nom": "transition Pro",
+        "lien": "https://www.transitionspro-na.fr/",
+        "exposant": true,
+        "photo": "partenaires/transition.jpeg"
+    },
+    {
+        "nom": "Région Nouvelle-Aquitaine",
+        "lien": "https://www.nouvelle-aquitaine.fr/",
+        "exposant": true,
+        "photo": "partenaires/region.png"
+    },
+    {
+        "nom": "SPN",
+        "lien": "https://www.spn.asso.fr/",
+        "exposant": true,
+        "photo": "partenaires/spn.png"
+    },
+
     {
         "nom": "Aract",
+        "exposant": false,
+        "lien": "https://www.nouvelle-aquitaine.aract.fr/",
         "photo": "partenaires/aract.jpeg"
     },    {
         "nom": "Re travailler",
+        "exposant": false,
+        "lien": "https://www.retravailler-ouest.fr/",
         "photo": "partenaires/retravailler.png"
     }
     ,    {
         "nom": "Atlas Opco",
+        "exposant": false,
+        "lien": "https://www.opco-atlas.fr/",
         "photo": "partenaires/atlasopco.png"
+    }, {
+        "nom": "Préfecture des Deux-Sèvres",
+        "exposant": false,
+        "lien": "https://www.deux-sevres.gouv.fr/Politiques-publiques/Egalite-entre-les-femmes-et-les-hommes",
+        "photo": "partenaires/prefecture.jpeg"
     }
-    ,{
-        "nom": "Cap emploi",
-        "photo": "partenaires/capemploi.jpeg"
-    }
+
+    
 ]

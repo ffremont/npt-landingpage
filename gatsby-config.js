@@ -31,7 +31,7 @@ module.exports = {
         short_name: "Makefolio",
         start_url: "/",
         display: "standalone",
-        icon: "src/images/logoENI.png",
+        icon: "src/images/logo.png",
         orientation: "portrait",
       },
     },
