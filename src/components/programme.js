@@ -73,30 +73,29 @@ const Programme = () => {
           <div className="column is-12 has-text-centered">
             <h2>Au programme</h2>
           </div>
+
           <div className="column is-12">
             <div className="box program-accueil has-text-centered">
-              <span className="is-lightgreen">10H30 – 11H</span>
+              <span className="is-lightgreen">10H00 – 10H30</span>
               <span className="ml-2">Accueil</span>
             </div>
             <div className="box has-text-centered is-box-lightgreen">
-              Salle de conférence
+              AfterWork
             </div>
           </div>
           <div className="column is-12">
             <div className="box py-5 table-ronde has-text-centered">
-              <h4>11h - 12h30</h4>
+              <h4>à partir de 19H</h4>
               <div>
-                <p className="my-1">Table Ronde de lancement</p>
                 <p className="my-2">
                   <strong>
-                    Le numérique, une chance pour les femmes.
-                    <br />
-                    Les femmes, une chance pour le numérique
+                  Animée par Julia MEMETEAU (Fondatrice de JUME),<br/> nous vous donnerons les clés pour mettre en
+avant vos qualités en tant que femmes et aborderons les stéréotypes de genres qui persistent
+encore.
                   </strong>
                 </p>
                 <p className="my-1">
-                  Axelle LEROUX, Carolle GOLLA, Sandra GERARD, Francine ROUX,
-                  Julia MEMETEAU
+                Rendez-vous à La Java - 365 Av de La Rochelle à Niort
                 </p>
               </div>
             </div>
@@ -136,6 +135,29 @@ const Programme = () => {
             );
           })}
         </div>
+        
+        <div className="column is-12">
+            <div className="box has-text-centered is-box-lightgreen">
+              AfterWork
+            </div>
+          </div>
+          <div className="column is-12">
+            <div className="box py-5 table-ronde has-text-centered">
+              <h4>à partir de 19H</h4>
+              <div>
+                <p className="my-2">
+                  <strong>
+                  Animée par Julia MEMETEAU (Fondatrice de JUME),<br/> nous vous donnerons les clés pour mettre en
+avant vos qualités en tant que femmes et aborderons les stéréotypes de genres qui persistent
+encore.
+                  </strong>
+                </p>
+                <p className="my-1">
+                Rendez-vous à La Java - 365 Av de La Rochelle à Niort
+                </p>
+              </div>
+            </div>
+          </div>
       </div>
     </section>
   );
