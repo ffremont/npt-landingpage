@@ -1,0 +1,33 @@
+.afterwork-component {
+  margin-top:80px;
+
+  .container {
+    background-color: $darkblue;
+    padding-right: 10px;
+  }
+  .subtitle{
+    font-weight: bold;
+    display: block;
+  }
+
+  h2, span, p {
+    color: $white;
+  }
+  h2.primary-title{
+    margin-bottom:0 !important;
+  }
+  h3.secondary-title{
+    margin-top:0 !important;
+    color:white !important;
+  }
+
+  strong{
+    color:white !important;
+    text-decoration: underline;
+  }
+  p, span {
+    font-size : 14px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif ;
+  }
+}

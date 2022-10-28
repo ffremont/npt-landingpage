@@ -1,0 +1,12 @@
+.carnet-component {
+ .material-symbols-outlined {
+    font-size:50px;
+    color:#707070;
+  }
+  .items > *{
+    flex:1
+  }
+  .actions{
+    text-align: center;
+  }
+}

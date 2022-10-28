@@ -11,4 +11,10 @@
     font-weight: 500;
     color:$lightgreen !important;
   }
+
+  p.eni-buttons{
+    a+a{
+      margin-left:10px;
+    }
+  }
 }

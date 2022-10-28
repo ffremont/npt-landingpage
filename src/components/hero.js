@@ -75,26 +75,32 @@ const Hero = () => {
                   <h1 className="block mt-5">
                   22/11/2022 | NIORT TECH<br/>
                 JOURNÉE DE 10H À 17H30 | GRATUIT<br/>
-                AFTERWORK À PARTIR DE 19H I PAYANT SUR INSCRIPTION
+                AFTERWORK À PARTIR DE 19H & GRATUIT SUR INSCRIPTION
                   </h1>
                   <p>
                     <Link
                       className="eni-button is-inline-block my-3 is-uppercase"
-                      to="/#programme"
+                      to="/#afterwork"
                     >
-                      Découvrez le programme
+                      S'inscrire à l'AfterWork
                     </Link>
                   </p>
 
-                  <p>
+                  <p className="eni-buttons">
                     <a
                       className="eni-button is-inline-block my-3 is-uppercase"
-                      href="https://niort-agglo.cosoft.fr/LogOn?ReturnUrl=/Admin/ResourceEvent/ReservationListResourceEvent/23d9a821-dd32-4b58-bdcd-ad8f00c3e7c0"
-                      target="_blank"
+                      href="/#programme"
                     >
-                      inscrivez-vous !
+                      Découvrir le programme
+                    </a>
+                    <a
+                      className="eni-button is-inline-block my-3 is-uppercase"
+                      href="/#carnet"
+                    >
+                      Accès au carnet de visite
                     </a>
                   </p>
+                
                 </div>
               </div>
             </BgImage>
@@ -129,7 +135,7 @@ const Hero = () => {
                 <h1 className="block mt-5">
                 22/11/2022 | NIORT TECH<br/>
                 JOURNÉE DE 10H À 17H30 | GRATUIT<br/>
-                AFTERWORK À PARTIR DE 19H I PAYANT SUR INSCRIPTION
+                AFTERWORK À PARTIR DE 19H &amp; GRATUIT SUR INSCRIPTION
                 </h1>
 
                 <p>
