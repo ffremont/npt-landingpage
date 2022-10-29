@@ -3,7 +3,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import * as React from "react";
 
 const Organisateurs = () => {
-  const { niortTech, niortAgglo, cbe, eni } = useStaticQuery(graphql`
+  const { niortTech, niortAgglo, cbe, eni, region } = useStaticQuery(graphql`
     query organisateursQuery {
       niortTech: file(base: { eq: "niort-tech-logo.png" }) {
         childImageSharp {
@@ -14,6 +14,12 @@ const Organisateurs = () => {
       niortAgglo: file(base: { eq: "niort-agglo-logo.png" }) {
         childImageSharp {
           gatsbyImageData
+        }
+      }
+
+      region: file(base: { eq: "region.png" }) {
+        childImageSharp {
+          gatsbyImageData(width:200)
         }
       }
 
@@ -160,6 +166,31 @@ const Organisateurs = () => {
               </div>
             </div>
           </div>
+
+          <div className="column block is-12">
+            <div className="box">
+              <div className="columns is-variable is-6">
+                <div className="column is-4">
+                  <GatsbyImage
+                    imgStyle={{ objectFit: "contain" }}
+                    style={{ width: "86%" }}
+                    image={getImage(region.childImageSharp.gatsbyImageData)}
+                    alt="niort tech"
+                  />
+                </div>
+                <div className="column is-8 text-cofinancement">
+                  <p className="block has-text-weight-bold">
+                    Co-financement
+                  </p>
+                 
+                  <p className="block">
+                  Evénement organisé avec le soutien financer de la région Nouvelle-Aquitaine 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
