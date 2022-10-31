@@ -140,14 +140,28 @@ const Hero = () => {
                 </h1>
 
                 <p>
-                  <a
-                    className="eni-button is-inline-block my-3 is-uppercase"
-                    href="https://niort-agglo.cosoft.fr/LogOn?ReturnUrl=/Admin/ResourceEvent/ReservationListResourceEvent/23d9a821-dd32-4b58-bdcd-ad8f00c3e7c0"
-                    target="_blank"
-                  >
-                    inscrivez-vous dès maintenant !
-                  </a>
-                </p>
+                    <Link
+                      className="eni-button is-inline-block my-3 is-uppercase"
+                      to="/#afterwork"
+                    >
+                      S'inscrire à l'AfterWork
+                    </Link>
+                  </p>
+
+                  <p className="eni-buttons">
+                    <a
+                      className="eni-button is-inline-block my-3 is-uppercase"
+                      href="/#programme"
+                    >
+                      Découvrir le programme
+                    </a>
+                    <a
+                      className="eni-button is-inline-block my-3 is-uppercase"
+                      href="/#carnet"
+                    >
+                      Accès au carnet de visite
+                    </a>
+                  </p>
               </div>
             </div>
           </div>
