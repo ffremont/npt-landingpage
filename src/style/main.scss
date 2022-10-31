@@ -12,7 +12,7 @@
 @import "../components/organisateurs.style.scss";
 @import "../components/contacts.style.scss";
 
-body{
+body {
   overflow: hidden;
 }
 
@@ -71,11 +71,15 @@ h3 {
   background-color: $lightgreen !important;
 }
 
-.speaker-component{
-  h2{
+.speaker-component {
+  h2 {
     background-color: white;
   }
 }
 .program-block{
   min-height: 300px;
+}
+
+.is-width-100 {
+  width: 100% !important;
 }

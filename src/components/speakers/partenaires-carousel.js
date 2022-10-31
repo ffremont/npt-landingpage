@@ -3,16 +3,17 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { chunk } from "lodash";
 import * as React from "react";
 import { Carousel } from "react-responsive-carousel";
+import useIsMobile from "../../hooks/use-is-mobile.hook";
 
 const Slide = ({ partenaire }) => (
-    <div className="box is-flex is-flex-direction-column">
-      <GatsbyImage
-        image={getImage(partenaire.photo.childImageSharp.gatsbyImageData)}
-        alt="femme numérique"
-      />
-      <div>{partenaire.nom}</div>
-    </div>
-  );
+  <div style={{height:"250px"}} className="box is-flex is-width-100 is-justify-content-center is-flex-direction-column">
+    <GatsbyImage
+      image={getImage(partenaire.photo.childImageSharp.gatsbyImageData)}
+      alt="femme numérique"
+    />
+    <div>{partenaire.nom}</div>
+  </div>
+);
 
 const PartenairesCarousel = () => {
   const { allPartenairesJson } = useStaticQuery(graphql`
@@ -25,15 +26,15 @@ const PartenairesCarousel = () => {
           exposant
           photo {
             childImageSharp {
-              gatsbyImageData
+              gatsbyImageData( height:200, layout: CONSTRAINED)
             }
           }
         }
       }
     }
   `);
-
-  const partenaires = chunk(allPartenairesJson.nodes, 4);
+  const isMobile = useIsMobile();
+  const partenaires = chunk(allPartenairesJson.nodes, isMobile ? 1 : 4);
 
   return (
     <section className="speaker-component">
@@ -45,15 +46,17 @@ const PartenairesCarousel = () => {
           <div className="column is-12 has-text-centered">
             <Carousel
               emulateTouch
-              autoPlay
-              infiniteLoop
               showArrows={false}
               showStatus={false}
+              showThumbs={false}
             >
               {partenaires.map((chunk) => (
                 <div className="columns is-multiline">
                   {chunk.map((partenaire) => (
-                    <a href={partenaire.lien} className="column is-3 has-text-centered">
+                    <a
+                      href={partenaire.lien}
+                      className="column is-flex is-3 has-text-centered"
+                    >
                       <Slide partenaire={partenaire} />
                     </a>
                   ))}

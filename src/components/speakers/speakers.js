@@ -33,7 +33,7 @@ const Speakers = () => {
           <div className="columns is-multiline">
             <div className="column is-12 has-text-centered">
               {/*<IntervenantCarousel />*/}
-              <ExposantsCarousel />
+              {/* <ExposantsCarousel /> */}
               <PartenairesCarousel />
             </div>
           </div>
