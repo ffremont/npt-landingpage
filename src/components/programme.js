@@ -44,7 +44,9 @@ const ProgrammeBlock = ({ programme }) => {
         <strong>{programme.description}</strong>
       </p>
       {programme.intervenants.map((intervenant) => (
-        <p className="block">{intervenant}</p>
+        <p key={`${programme.id}-${intervenant}`} className="block">
+          {intervenant}
+        </p>
       ))}
     </div>
   );
@@ -133,78 +135,27 @@ const Programme = () => {
             </div>
           ))}
 
-          {/*labels
-            .map(
-              (label) =>
-                allProgrammesJson.group.find((g) => g.idSalle === label).nodes
-            )
-            .map((nodes) => {
-              sortBy(nodes, "slot", false);
-              return nodes;
-            })
-            .map((programme) => {
-              return (
-                <>
-                  <div className="column is-12-mobile is-hidden-tablet">
-                    <div className="box has-text-centered is-box-lightgreen">
-                      {programme.idSalle}
-                    </div>
-                  </div>
-
-                  <div
-                    key={uuidv4(JSON.stringify(programme), uuidv4.URL)}
-                    className="column is-flex is-3-desktop is-12-mobile"
-                  >
-                    {programme && <ProgrammeBlock programme={programme} />}
-                  </div>
-                </>
-              );
-            })*/}
-          {labels.map((label, i) => {
+          {labels.map((label) => {
             const programmes = allProgrammesJson.group.find(
               (g) => g.idSalle === label
             ).nodes;
             sortBy(programmes, "slot", false);
 
             return (
-              <>
-              
+              <React.Fragment key={uuidv4(JSON.stringify(label), uuidv4.URL)}>
                 <div className="column is-12-mobile is-hidden-tablet">
                   <div className="box has-text-centered is-box-lightgreen">
                     {label}
                   </div>
                 </div>
-                <div
-                    key={uuidv4(JSON.stringify(label), uuidv4.URL)}
-                    className="column is-3-desktop is-12-mobile"
-                  >
-                {programmes.map((programme) => (
-                    <ProgrammeBlock programme={programme} />
-
-                ))}</div>
-              </>
+                <div className="column is-3-desktop is-12-mobile">
+                  {programmes.map((programme) => (
+                    <ProgrammeBlock key={programme.id} programme={programme} />
+                  ))}
+                </div>
+              </React.Fragment>
             );
           })}
-
-          {/*sortedArray.map((programmeGrp, i) => {
-            return (
-              <>
-                <div className="column is-12-mobile is-hidden-tablet">
-                  <div className="box has-text-centered is-box-lightgreen">
-                    {labels[i]}
-                  </div>
-                </div>
-                {programmeGrp.map((programme) => (
-                  <div
-                    key={uuidv4(JSON.stringify(programme), uuidv4.URL)}
-                    className="column is-flex is-3-desktop is-12-mobile"
-                  >
-                    {programme && <ProgrammeBlock programme={programme} />}
-                  </div>
-                ))}
-              </>
-            );
-          })*/}
         </div>
 
         <div className="column is-12">

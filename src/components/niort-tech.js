@@ -72,7 +72,7 @@ const NiortTech = () => {
                     <p className="my-5">
                       <span>12-14 Avenue Bujault à NIORT</span>
                     </p>
-                    <p>
+                    <div className="has-text-white">
                       <h3 className="my-4">Événement gratuit</h3>
                       <a
                         className="eni-button is-inline-block my-5 is-uppercase"
@@ -81,7 +81,7 @@ const NiortTech = () => {
                       >
                         inscrivez-vous dès maintenant !
                       </a>
-                    </p>
+                    </div>
                   </div>
                 </div>
               </div>

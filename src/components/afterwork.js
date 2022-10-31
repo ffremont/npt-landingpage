@@ -83,8 +83,8 @@ const AfterWork = () => {
                       </span>
                       Rendez-vous à La Java - 365 Av de La Rochelle à Niort
                     </p>
-                    <p>
-                      <h3 className="my-4">Événement gratuit</h3>
+                    <div>
+                      <h3 className="my-4 has-text-white">Événement gratuit</h3>
                       <a
                         className="eni-button is-inline-block my-5 is-uppercase"
                         href="https://www.eventbrite.com/e/billets-afterwork-numerique-pour-toutes-450815650747"
@@ -92,7 +92,7 @@ const AfterWork = () => {
                       >
                         inscrivez-vous dès maintenant !
                       </a>
-                    </p>
+                    </div>
                   </div>
                 </div>
               </div>

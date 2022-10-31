@@ -49,6 +49,8 @@ const PartenairesCarousel = () => {
               showArrows={false}
               showStatus={false}
               showThumbs={false}
+              showIndicators={false}
+              
             >
               {partenaires.map((chunk) => (
                 <div className="columns is-multiline">

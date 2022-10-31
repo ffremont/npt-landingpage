@@ -1,10 +1,8 @@
 import { BgImage } from "gbimage-bridge";
 import * as React from "react";
 import { graphql, useStaticQuery } from "gatsby";
-import ExposantsCarousel from "./exposants-carousel";
-import IntervenantCarousel from "./intervenants-carousel";
-import PartenairesCarousel from "./partenaires-carousel";
 import { getImage } from "gatsby-plugin-image";
+import PartenairesCarousel from "./partenaires-carousel";
 
 const Speakers = () => {
   const { motif1 } = useStaticQuery(graphql`
@@ -32,8 +30,6 @@ const Speakers = () => {
         <div className="container is-max-desktop pt-6">
           <div className="columns is-multiline">
             <div className="column is-12 has-text-centered">
-              {/*<IntervenantCarousel />*/}
-              {/* <ExposantsCarousel /> */}
               <PartenairesCarousel />
             </div>
           </div>
