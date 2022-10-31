@@ -13,7 +13,7 @@ const Hero = () => {
     query brandQuery {
       femmeFile: file(base: { eq: "femme.png" }) {
         childImageSharp {
-          gatsbyImageData(breakpoints: [750, 1080, 1366, 1920])
+          gatsbyImageData
         }
       }
 
@@ -106,6 +106,7 @@ const Hero = () => {
             </BgImage>
             <div className="columns is-hidden-tablet">
               <div className="column is-12 p-0">
+                
                 <BgImage
                   image={femmeFile.childImageSharp.gatsbyImageData}
                   Tag="div"

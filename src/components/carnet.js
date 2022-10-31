@@ -5,7 +5,7 @@ const CarnetBlock = ({ logo, text }) => (
   <div className="is-flex is-flex-direction-column flex-wrap">
     <div className="has-text-centered my-2">
       <strong>
-        <span class="material-symbols-outlined">{logo}</span>
+        <span className="material-symbols-outlined">{logo}</span>
       </strong>
     </div>
     <div className="has-text-centered">
@@ -37,7 +37,7 @@ const Carnet = () => {
         </div>
       </div>
       <div className="actions">
-      <a class="eni-button is-inline-block my-3 is-uppercase" href="https://carnet-de-visite-numerique-pour-toutes.web.app/">Accéder au carnet de visite</a>
+      <a className="eni-button is-inline-block my-3 is-uppercase" href="https://carnet-de-visite-numerique-pour-toutes.web.app/">Accéder au carnet de visite</a>
       </div>
     </div>
   );
