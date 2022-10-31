@@ -48,6 +48,11 @@ const Contacts = () => {
           </div>
         </div>
       </div>
+      <div style={{textAlign:'center'}}>
+        <a href="https://docs.google.com/document/d/e/2PACX-1vSQFj3Cvh-tpM3XVZyjeYQJM6t2Vf1Pa41E5IUeMQ6WOqahhaoyjZLSIaUULEoi0LXmGGfApPiyC6An/pub" target="_blank" rel="noopener noreferrer">Mentions</a>
+        &nbsp;|&nbsp;
+        <a href="mailto:mbugnot@eni-ecole.fr">Contact</a>
+      </div>
     </section>
   );
 };
