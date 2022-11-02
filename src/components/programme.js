@@ -2,29 +2,6 @@ import { graphql, useStaticQuery } from "gatsby";
 import * as React from "react";
 import { v4 as uuidv4 } from "uuid";
 
-const sortBy = function (arr, propertyName, sortDirection) {
-  var sortArguments = arguments;
-  arr.sort(function (objA, objB) {
-    var result = 0;
-    for (
-      var argIndex = 0;
-      argIndex < sortArguments.length && result === 0;
-      argIndex += 2
-    ) {
-      var propertyName = sortArguments[argIndex];
-      result =
-        objA[propertyName] < objB[propertyName]
-          ? -1
-          : objA[propertyName] > objB[propertyName]
-          ? 1
-          : 0;
-
-      //Reverse if sort order is false (DESC)
-      result *= !sortArguments[argIndex + 1] ? 1 : -1;
-    }
-    return result;
-  });
-};
 
 const ProgrammeBlock = ({ programme }) => {
   return (
@@ -62,6 +39,7 @@ const Programme = () => {
             id
             salle
             idSalle
+            ordre
             slot
             type
             logo
@@ -139,7 +117,8 @@ const Programme = () => {
             const programmes = allProgrammesJson.group.find(
               (g) => g.idSalle === label
             ).nodes;
-            sortBy(programmes, "slot", false);
+            programmes.sort(function(a,b) {return (a.ordre > b.ordre) ? 1 : ((b.ordre > a.ordre) ? -1 : 0);} );
+            console.log(programmes)
 
             return (
               <React.Fragment key={uuidv4(JSON.stringify(label), uuidv4.URL)}>
