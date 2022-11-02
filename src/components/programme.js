@@ -118,7 +118,6 @@ const Programme = () => {
               (g) => g.idSalle === label
             ).nodes;
             programmes.sort(function(a,b) {return (a.ordre > b.ordre) ? 1 : ((b.ordre > a.ordre) ? -1 : 0);} );
-            console.log(programmes)
 
             return (
               <React.Fragment key={uuidv4(JSON.stringify(label), uuidv4.URL)}>
