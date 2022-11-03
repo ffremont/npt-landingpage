@@ -147,8 +147,7 @@ const Programme = () => {
             <div>
               <p className="my-2">
                 <strong>
-                  Animée par Julia MEMETEAU (Fondatrice de JUME),
-                  <br /> nous vous donnerons les clés pour mettre en avant vos
+                  Nous vous donnerons les clés pour mettre en avant vos
                   qualités en tant que femmes et aborderons les stéréotypes de
                   genres qui persistent encore.
                 </strong>

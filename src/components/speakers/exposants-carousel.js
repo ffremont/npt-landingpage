@@ -1,11 +1,12 @@
-import * as React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { chunk } from "lodash";
+import * as React from "react";
 import { Carousel } from "react-responsive-carousel";
-import { chunk } from 'lodash';
+import useIsMobile from "../../hooks/use-is-mobile.hook";
 
 const Slide = ({ partenaire }) => (
-  <div className="box is-flex is-flex-direction-column">
+  <div style={{height:"250px"}} className="box is-flex is-width-100 is-justify-content-center is-flex-direction-column">
     <GatsbyImage
       image={getImage(partenaire.photo.childImageSharp.gatsbyImageData)}
       alt="femme numérique"
@@ -15,9 +16,8 @@ const Slide = ({ partenaire }) => (
 );
 
 const ExposantsCarousel = () => {
- 
   const { allPartenairesJson } = useStaticQuery(graphql`
-    query partenairesQuery {
+    query exposantQuery {
       allPartenairesJson {
         nodes {
           id
@@ -26,28 +26,39 @@ const ExposantsCarousel = () => {
           exposant
           photo {
             childImageSharp {
-              gatsbyImageData
+              gatsbyImageData( height:200, layout: CONSTRAINED)
             }
           }
         }
       }
     }
   `);
-  const exposants = chunk(allPartenairesJson.nodes.filter(p => p.exposant),4);
+  const isMobile = useIsMobile();
+  const partenaires = chunk(allPartenairesJson.nodes.filter(p => p.exposant), isMobile ? 1 : 4);
 
   return (
     <section className="speaker-component">
       <div className="container is-max-desktop pt-6">
         <div className="columns is-multiline">
           <div className="column is-12 has-text-centered">
-            <h2>Les Exposants</h2>
+            <h2>Stands partenaires</h2>
           </div>
           <div className="column is-12 has-text-centered">
-            <Carousel emulateTouch autoPlay infiniteLoop showArrows={false} showStatus={false} >
-            {exposants.map((chunk) => (
+            <Carousel
+              emulateTouch
+              showArrows={false}
+              showStatus={false}
+              showThumbs={false}
+              showIndicators={false}
+              
+            >
+              {partenaires.map((chunk) => (
                 <div className="columns is-multiline">
                   {chunk.map((partenaire) => (
-                    <a href={partenaire.lien} className="column is-3 has-text-centered">
+                    <a
+                      href={partenaire.lien}
+                      className="column is-flex is-3 has-text-centered"
+                    >
                       <Slide partenaire={partenaire} />
                     </a>
                   ))}

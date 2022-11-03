@@ -3,6 +3,7 @@ import * as React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 import PartenairesCarousel from "./partenaires-carousel";
+import ExposantsCarousel from "./exposants-carousel";
 
 const Speakers = () => {
   const { motif1 } = useStaticQuery(graphql`
@@ -30,6 +31,7 @@ const Speakers = () => {
         <div className="container is-max-desktop pt-6">
           <div className="columns is-multiline">
             <div className="column is-12 has-text-centered">
+             <ExposantsCarousel/>
               <PartenairesCarousel />
             </div>
           </div>

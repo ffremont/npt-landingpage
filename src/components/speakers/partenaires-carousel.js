@@ -34,14 +34,14 @@ const PartenairesCarousel = () => {
     }
   `);
   const isMobile = useIsMobile();
-  const partenaires = chunk(allPartenairesJson.nodes, isMobile ? 1 : 4);
+  const partenaires = chunk(allPartenairesJson.nodes.filter(p => !p.exposant), isMobile ? 1 : 4);
 
   return (
     <section className="speaker-component">
       <div className="container is-max-desktop pt-6">
         <div className="columns is-multiline">
           <div className="column is-12 has-text-centered">
-            <h2>Les Partenaires</h2>
+            <h2>Les autres partenaires</h2>
           </div>
           <div className="column is-12 has-text-centered">
             <Carousel

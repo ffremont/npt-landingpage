@@ -18,7 +18,7 @@ const IndexPage = () => {
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
         />
-        <meta property="og:title" content="Numérique pour toutes 2022" />
+        <meta property="og:title" content="Numérique pour toutes | La reconversion au féminin | 2022" />
         <meta
           property="og:url"
           content="https://numerique-pour-toutes.web.app"
@@ -26,6 +26,11 @@ const IndexPage = () => {
         <meta property="og:image" content="/banner.jpg" />
         <meta
           property="og:description"
+          content="La reconversion au féminin, 22/11/2022 à NIORT TECH, TOUTE LA JOURNÉE DE 10H À 17H30, GRATUIT.
+  AFTERWORK À PARTIR DE 19H SUR INSCRIPTION, GRATUIT."
+        />
+         <meta
+         name="description"
           content="La reconversion au féminin, 22/11/2022 à NIORT TECH, TOUTE LA JOURNÉE DE 10H À 17H30, GRATUIT.
   AFTERWORK À PARTIR DE 19H SUR INSCRIPTION, GRATUIT."
         />
@@ -46,4 +51,4 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>Numérique pour toutes -Eni- ecole</title>;
+export const Head = () => <title>Numérique pour toutes | La reconversion au féminin | 2022</title>;

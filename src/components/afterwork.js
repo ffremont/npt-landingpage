@@ -64,8 +64,7 @@ const AfterWork = () => {
                       carrières féminines.
                     </p>
                     <p className="my-5">
-                      Animée par <strong>Julia MEMETEAU</strong> (Fondatrice de
-                      JUME), nous vous donnerons les clés pour mettre en avant
+                      Nous vous donnerons les clés pour mettre en avant
                       vos qualités en tant que femmes et aborderons les
                       stéréotypes de genres qui persistent encore.
                     </p>

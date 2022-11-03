@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Npt Landing Page`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Numérique pour toutes`,
+    siteUrl: `https://numerique-pour-toutes.web.app`,
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
@@ -27,8 +27,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "Makefolio",
-        short_name: "Makefolio",
+        name: "Numérique pour toutes",
+        short_name: "Numérique pour toutes",
         start_url: "/",
         display: "standalone",
         icon: "src/images/logo.png",
