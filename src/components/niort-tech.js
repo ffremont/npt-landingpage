@@ -72,16 +72,7 @@ const NiortTech = () => {
                     <p className="my-5">
                       <span>12-14 Avenue Bujault à NIORT</span>
                     </p>
-                    <div className="has-text-white">
-                      <h3 className="my-4">Événement gratuit</h3>
-                      <a
-                        className="eni-button is-inline-block my-5 is-uppercase"
-                        href="https://niort-agglo.cosoft.fr/Admin/ResourceEvent/ReservationListResourceEvent/23d9a821-dd32-4b58-bdcd-ad8f00c3e7c0"
-                        target="_blank"
-                      >
-                        inscrivez-vous dès maintenant !
-                      </a>
-                    </div>
+                   
                   </div>
                 </div>
               </div>
