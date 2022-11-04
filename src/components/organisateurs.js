@@ -17,7 +17,7 @@ const Organisateurs = () => {
         }
       }
 
-      region: file(base: { eq: "region.png" }) {
+      region: file(base: { eq: "region.jpeg" }) {
         childImageSharp {
           gatsbyImageData(width:200)
         }
@@ -137,7 +137,7 @@ const Organisateurs = () => {
                     imgStyle={{ objectFit: "contain" }}
                     style={{ width: "86%" }}
                     image={getImage(eni.childImageSharp.gatsbyImageData)}
-                    alt="niort tech"
+                    alt="eni"
                   />
                 </div>
                 <div className="column is-8">
@@ -175,7 +175,7 @@ const Organisateurs = () => {
                     imgStyle={{ objectFit: "contain" }}
                     style={{ width: "86%" }}
                     image={getImage(region.childImageSharp.gatsbyImageData)}
-                    alt="niort tech"
+                    alt="région"
                   />
                 </div>
                 <div className="column is-8 text-cofinancement">
