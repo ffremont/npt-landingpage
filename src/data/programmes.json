@@ -100,8 +100,8 @@
     "intervenants": ["SOGETI"]
   },
   {
-    "salle": "Salle Cloud 3e étage",
-    "idSalle": "Salle Cloud 3e étage",
+    "salle": "Salle Cookie 3e étage",
+    "idSalle": "Salle Cookie 3e étage",
     "slot": "15h30 - 16h15",
     "ordre": 15.5,
     "logo": "metier",
@@ -110,8 +110,8 @@
     "intervenants": ["IPSOON"]
   },
   {
-    "salle": "Salle Cookie 3e étage",
-    "idSalle": "Salle Cookie 3e étage",
+    "salle": "Salle Cloud 3e étage",
+    "idSalle": "Salle Cloud 3e étage",
     "slot": "15h30 - 16h15",
     "ordre": 15.5,
     "logo": "metier",
