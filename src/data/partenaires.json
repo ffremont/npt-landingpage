@@ -1,9 +1,9 @@
 [
   {
-    "nom": "Ambassadrices du numérique",
-    "lien": "https://cben-hvs.fr/accueil/les-ambassadrices-du-numerique-2021/",
-    "exposant": true,
-    "photo": "partenaires/cbe.png"
+    "nom": "CCI",
+    "lien": "https://www.deux-sevres.cci.fr/",
+    "exposant": false,
+    "photo": "partenaires/cci79.jpeg"
   },
   {
     "nom": "NiortWeb",
@@ -41,12 +41,7 @@
     "exposant": true,
     "photo": "partenaires/snc.png"
   },
-  {
-    "nom": "ENI",
-    "lien": "https://www.eni-ecole.fr/",
-    "exposant": true,
-    "photo": "partenaires/eni.png"
-  },
+  
   {
     "nom": "Fabrique du numérique",
     "lien": "https://www.fabdunum.fr/",
@@ -71,7 +66,7 @@
     "nom": "Région Nouvelle-Aquitaine",
     "lien": "https://www.nouvelle-aquitaine.fr/",
     "exposant": true,
-    "photo": "partenaires/region.png"
+    "photo": "partenaires/region.jpeg"
   },{
     "nom": "SPN",
     "lien": "https://www.spn.asso.fr/",
@@ -83,7 +78,7 @@
     "lien": "https://www.nouvelle-aquitaine.aract.fr/",
     "photo": "partenaires/aract.jpeg"
   },{
-    "nom": "Re travailler",
+    "nom": "Retravailler dans l’Ouest",
     "exposant": false,
     "lien": "https://www.retravailler-ouest.fr/",
     "photo": "partenaires/retravailler.png"

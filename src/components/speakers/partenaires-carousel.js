@@ -45,11 +45,14 @@ const PartenairesCarousel = () => {
           </div>
           <div className="column is-12 has-text-centered">
             <Carousel
-              emulateTouch
-              showArrows={false}
+              showArrows={true}
               showStatus={false}
-              showThumbs={false}
-              showIndicators={false}
+              showThumbs={true}
+              transitionTime={500}
+              interval={6000}
+              showIndicators={true}
+              autoPlay={true}
+              infiniteLoop
               
             >
               {partenaires.map((chunk) => (

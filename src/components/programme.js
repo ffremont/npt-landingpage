@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 
 const ProgrammeBlock = ({ programme }) => {
   return (
-    <div className="program-block full-width box is-relative is-flex is-flex-direction-column has-text-centered">
+    <div className={`program-block ${programme.type} full-width box is-relative is-flex is-flex-direction-column has-text-centered`}>
       <div className="has-text-left logo-wrapper">
         <span className={`icon-${programme.logo}`}></span>
       </div>
@@ -95,7 +95,7 @@ const Programme = () => {
 
           <div className="column is-12">
             <div className="box program-accueil has-text-centered">
-              <span className="is-lightgreen">10H00 – 10H30</span>
+              <span className="is-lightgreen">10H00</span>
               <span className="ml-2">Accueil</span>
             </div>
           </div>

@@ -122,7 +122,7 @@
   {
     "salle": "Rez-de-chaussée",
     "idSalle": "Autres salles",
-    "slot": "10h00 - 17h30",
+    "slot": "10h15 - 17h30",
     "ordre": 10,
     "logo": "exercice",
     "type": "Pratique",
@@ -132,7 +132,7 @@
   {
     "salle": "Salle Big 2ème",
     "idSalle": "Autres salles",
-    "slot": "10h00 - 17h30",
+    "slot": "10h15 - 17h30",
     "ordre": 10,
     "logo": "exercice",
     "type": "Pratique",
@@ -142,7 +142,7 @@
   {
     "salle": "Salle Data 2ème",
     "idSalle": "Autres salles",
-    "slot": "10h00 - 17h30",
+    "slot": "10h15 - 17h30",
     "ordre": 10,
     "logo": "exercice",
     "type": "Pratique",
@@ -163,7 +163,7 @@
     "salle": "Rez-de-chaussée",
     "idSalle": "Autres salles",
     "ordre": 10,
-    "slot": "10h00 - 17h30",
+    "slot": "10h15 - 17h30",
     "logo": "exercice",
     "type": "Pratique",
     "description": "Atelier 1h30",
@@ -172,7 +172,7 @@
   {
     "salle": "Stand MA REUSSITE",
     "idSalle": "Autres salles",
-    "slot": "10h00 - 17h30",
+    "slot": "10h15 - 17h30",
     "ordre": 10,
     "logo": "exercice",
     "type": "Pratique",
@@ -218,6 +218,16 @@
     "type": "Métier",
     "description": "Cheffe de projet développeurs",
     "intervenants": ["SOPRA"]
+  },
+  {
+    "salle": "Salle Tech 3e étage",
+    "idSalle": "Salle Tech 3e étage",
+    "slot": "14h00 - 14h00",
+    "ordre": 14,
+    "logo": "metier",
+    "type": "vide",
+    "description": "...",
+    "intervenants": [".."]
   },
   {
     "salle": "Salle Tech 3e étage",

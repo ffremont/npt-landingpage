@@ -83,3 +83,17 @@ h3 {
 .is-width-100 {
   width: 100% !important;
 }
+
+.carousel .control-dots .dot{
+  background: #383434 !important;
+}
+
+.program-block.vide{
+  opacity: 0;
+}
+@media screen and (max-width: 768px)
+{
+  .program-block.vide{
+    display: none !important;
+  }
+}
