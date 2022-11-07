@@ -147,9 +147,9 @@ const Programme = () => {
             <div>
               <p className="my-2">
                 <strong>
-                  Nous vous donnerons les clés pour mettre en avant vos
-                  qualités en tant que femmes et aborderons les stéréotypes de
-                  genres qui persistent encore.
+                Dans un cadre détendu et festif, nous vous proposons
+                      d’assister à une table ronde autour de la thématique des
+                      carrières féminines.
                 </strong>
               </p>
               <p className="my-1">

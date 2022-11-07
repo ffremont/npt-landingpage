@@ -14,7 +14,7 @@
   {
     "nom": "Entreprendre au féminin",
     "lien": "https://www.eaf-deux-sevres.fr/accueil.html",
-    "exposant": true,
+    "exposant": false,
     "photo": "partenaires/entreprendre.png"
   },
   {
@@ -40,6 +40,17 @@
     "lien": "https://snc.asso.fr/snc-niort",
     "exposant": true,
     "photo": "partenaires/snc.png"
+  },
+  {
+    "nom": "Ambassadrices du numérique",
+    "lien": "#",
+    "exposant": true,
+    "photo": "partenaires/AMBASSADRICESDUNUMERIQUE.png"
+  },{
+    "nom": "ERIP",
+    "lien": "#",
+    "exposant": true,
+    "photo": "partenaires/erip.png"
   },
   
   {

@@ -26,7 +26,7 @@ const Carnet = () => {
             <CarnetBlock logo="explore" text={`Préparer votre visite en découvrant la programmation`} />
           </div>
           <div className="column is-3-desktop is-12-mobile items">
-            <CarnetBlock logo="badge" text={`Accès à toutes les cartes de visites numérique des intervenants`} />
+            <CarnetBlock logo="badge" text={`Accès à toutes les cartes de visites numériques des intervenants`} />
           </div>
           <div className="column is-3-desktop is-12-mobile items">
             <CarnetBlock logo="heart_plus" text={`Pendant et après votre visite, le carnet permet de conserver en favori les animations / coordonnées des intervenants.`} />

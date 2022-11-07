@@ -137,7 +137,7 @@
     "logo": "exercice",
     "type": "Pratique",
     "description": "Atelier Agile",
-    "intervenants": ["SOPRA"]
+    "intervenants": ["SOPRA STERIA"]
   },
   {
     "salle": "Salle Data 2ème",
@@ -146,7 +146,7 @@
     "ordre": 10,
     "logo": "exercice",
     "type": "Pratique",
-    "description": "Atelier de 1h",
+    "description": "Pitch ton projet, atelier 1h",
     "intervenants": ["Solidarité Nouvelle face au Chômage"]
   },
   {
@@ -166,7 +166,7 @@
     "slot": "10h15 - 17h30",
     "logo": "exercice",
     "type": "Pratique",
-    "description": "Atelier 1h30",
+    "description": "Osez le leadership au Féminin, atelier 1h30",
     "intervenants": ["Solidarité Nouvelle face au Chômage"]
   },
   {
@@ -187,7 +187,7 @@
     "logo": "metier",
     "type": "Métier",
     "description": "Business Analyst",
-    "intervenants": ["SOPRA"]
+    "intervenants": ["SOPRA STERIA"]
   },
   {
     "salle": "Salle Cloud 3e étage",
@@ -196,7 +196,7 @@
     "ordre": 16.75,
     "logo": "metier",
     "type": "Métier",
-    "description": "Consultate cyber sécurité",
+    "description": "Consultante cyber sécurité",
     "intervenants": ["Squad", "Groupe Atlantic"]
   },
   {
@@ -216,8 +216,8 @@
     "ordre": 15.5,
     "logo": "metier",
     "type": "Métier",
-    "description": "Cheffe de projet développeurs",
-    "intervenants": ["SOPRA"]
+    "description": "Développeuse",
+    "intervenants": ["SOPRA STERIA"]
   },
   {
     "salle": "Salle Tech 3e étage",
@@ -236,7 +236,7 @@
     "ordre": 16.75,
     "logo": "metier",
     "type": "Métier",
-    "description": "Développeuses",
-    "intervenants": ["SOPRA"]
+    "description": "Développeuse",
+    "intervenants": ["SOPRA STERIA"]
   }
 ]

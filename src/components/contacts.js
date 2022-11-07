@@ -19,7 +19,7 @@ const Contacts = () => {
               Virginie NEVEU
               <br />
               <a href="mailto:vneveu@eni-ecole.fr">vneveu@eni-ecole.fr</a>
-              <br /> 05.35.37.11.85
+              <br /> 05.35.37.99.69
             </p>
           </div>
           <div className="column is-4 has-text-centered">
