@@ -50,8 +50,8 @@
     "intervenants": ["GROUPE Y"]
   },
   {
-    "salle": "Salle Cookie 3e étage",
-    "idSalle": "Salle Cookie 3e étage",
+    "salle": "Salle Cloud 3e étage",
+    "idSalle": "Salle Cloud 3e étage",
     "slot": "14h15 - 15h00",
     "ordre": 14.25,
     "logo": "metier",
@@ -180,8 +180,8 @@
     "intervenants": ["MA REUSSITE"]
   },
   {
-    "salle": "Salle Cloud 3e étage",
-    "idSalle": "Salle Cloud 3e étage",
+    "salle": "Salle Cookie 3e étage",
+    "idSalle": "Salle Cookie 3e étage",
     "slot": "14h15 - 15h00",
     "ordre": 14.25,
     "logo": "metier",
