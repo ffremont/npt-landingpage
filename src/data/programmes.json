@@ -122,8 +122,8 @@
   {
     "salle": "Rez-de-chaussée",
     "idSalle": "Autres salles",
-    "slot": "10h15 - 17h30",
-    "ordre": 10,
+    "slot": "12h - 17h30",
+    "ordre": 12,
     "logo": "exercice",
     "type": "Pratique",
     "description": "Atelier coding",
